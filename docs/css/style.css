@@ -131,13 +131,13 @@ h1 {
 }
 
 .title {
-  text-align: center;
-  font-size: 26px;
-  font-weight: bold;
-  color: #430f0f;
-  margin-left: -80px;
-}
-
+    text-align: center;
+    justify-self: center;
+    transform: none;
+    font-size: 25px;
+    margin-left: 0;
+     margin-right: 130px;
+  }
 
 /* ============================================================
    6. HEADER
@@ -796,11 +796,13 @@ iframe {
     gap: 8px;
   }
 
-  .title {
+ .title {
     text-align: center;
     justify-self: center;
     transform: none;
-    font-size: 12px;
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   h1 {
@@ -822,7 +824,7 @@ iframe {
     justify-self: end;
   }
 
-  nav {
+ nav {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -834,16 +836,22 @@ iframe {
     border-radius: 0 0 10px 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     z-index: 999;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  nav a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
   }
 
   nav.active {
     display: flex;
-  }
-
-  nav a {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    flex-direction: column;
   }
 
   .langswitch {
@@ -895,17 +903,23 @@ iframe {
 
 /* --- Info strip (≤ 600px) --- */
 @media (max-width: 600px) {
+  .info {
+    padding: 30px 0;
+  }
+
   .info-box {
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .info-item {
-    width: 100%;
-    max-width: 320px;
+    width: 70%;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
   }
 }
 
