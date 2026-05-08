@@ -73,11 +73,11 @@ img {
 
 .logo-left {
   position: static;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .logo-left img {
-  height: 100px;
+  height: 140px;
 }
 
 
@@ -85,11 +85,12 @@ img {
    4. NAVIGATIE
    ============================================================ */
 
-nav {
-  margin-top: 2px;
-  text-align: center;
-}
 
+ nav {
+  margin-top: -15px;
+  text-align: center;
+  margin-bottom: 5px;
+}
 nav a {
   margin: 0 15px;
   text-decoration: none;
@@ -131,9 +132,10 @@ h1 {
 
 .title {
   text-align: center;
-  font-size: 35px;
+  font-size: 26px;
   font-weight: bold;
   color: #430f0f;
+  margin-left: -80px;
 }
 
 
@@ -216,7 +218,7 @@ header {
   font-weight: 600;
   letter-spacing: 0.5px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .actie-button:hover {
@@ -249,6 +251,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+  justify-content: center; 
   gap: 10px;
   opacity: 0;
   transform: translateY(20px);
@@ -552,6 +555,12 @@ header {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activiteit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .activiteit-card img {
@@ -889,12 +898,14 @@ iframe {
   .info-box {
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
   }
 
   .info-item {
     width: 100%;
     max-width: 320px;
     justify-content: center;
+    text-align: center;
   }
 }
 
